@@ -1,6 +1,8 @@
 <template>
-  <div id="Background">
-    <h3 class="text-center">Education & Experience
+  <div id="Background" class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+            <h3 class="text-center">Education & Experience
       <div>
         <img src="../assets/lie2.png" alt="" width=100>
       </div>
@@ -8,22 +10,22 @@
     <ul class="timeline">
   <!-- Item 1 -->
   <li>
-    <div class="direction-l">
+    <div class="comego direction-l">
       <div class="flag-wrapper">
         <span class="hexa"></span>
         <span class="flag">University at Buffalo - SUNY</span>
-        <span class="time-wrapper"><span class="time">August 2019 -- Present</span></span>
+        <span class="time-wrapper"><span class="time">August 2019 - Present</span></span>
       </div>
       <div class="desc text-center font-italic">Masters in Computer 
         Science</div>
-      <div class="desc text-center font-italic">  <strong>Coursework: </strong><p>Algorithm analysis and design, Information Retreival, Data Intensive Computing, Distributed Systems</p></div>
+      <div class="desc text-justify font-italic">  <strong>Coursework: </strong><p>Algorithm analysis and design, Information Retreival, Data Intensive Computing, Distributed Systems</p></div>
     </div>
   </li>
 
   <!-- Item 2 -->
   
   <li>
-    <div class="direction-r">
+    <div class="comego direction-r">
       <div class="flag-wrapper">
         <span class="hexa"></span>
         <span class="flag">Infosys Pvt Ltd.</span>
@@ -34,8 +36,18 @@
       <div class="desc text-center">
         <span class="align-middle font-weight-bold">Systems Engineer</span>
       </div>
-      <div class="desc text-center">
-        <p>Data Structures and Algorithms, Neural Networks, Computer Architecture</p>
+      <div class="desc text-justify">
+        <p>Engineered an email content analysis using JavaMail API, that assess header, body and attachments and derived nature, extent and 
+            frequency of a risk that ensured operations \& business continuity management by continuous monitoring of mail.</p>
+          <p>
+            Recommended and executed a server monitoring to estimate optimum usage of a server by providing insights on server stats using Prometheus metrics and Grafana to visualize the dashboards.
+          </p>
+          <p>
+            Improved the back-end search design element for a fashion website through a usability point of view that involves enabling query caching, using full text searches and query optimization.
+          </p>
+          <p>
+            Contributed in a cross-functional team to build a mini-project, to serve as a teaching aid for interns and trainees.
+          </p>
       </div>
     </div>
   </li>
@@ -44,53 +56,28 @@
   
 
   <li>
-    <div class="direction-l">
+    <div class="comego direction-l">
       <div class="flag-wrapper">
         <span class="hexa"></span>
         <span class="flag">Vellore Institute of Technology</span>
         <div>
-          <span class="time-wrapper"><span class="time">June 2013-May 2017</span></span>
+          <span class="time-wrapper"><span class="time">June 2013 - May 2017</span></span>
         </div>
       </div>
-      <div class="desc text-center">
+      <div class="desc text-justify">
         <strong>Coursework: </strong>
         <p>Data Structures and Algorithms, Neural Networks, Computer Architecture</p>
       </div>
     </div>
   </li>
 </ul>
+      </div>
+    </div>
+
   </div>
 </template>
 
 <style scoped>
-
-/* #Education{
-  position: relative;
-}
-
-#Education:before{
-  content:'';
-    background: url('../assets/edu1.png') no-repeat center center;
-    position: absolute;
-    top:0px;
-    left: 0px;
-    width:100%;
-    height:100%;
-    z-index:-1;
-    opacity: 0.05;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 90vh;
-} */
-
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,900);
-
-body{
-  font-family: 'Raleway', sans-serif;
-  color: #333;
-}
 
 header h1{
   text-align: center;
@@ -295,6 +282,38 @@ header h1{
   padding: 1em;
   z-index: 15;
 }
+
+.comego{
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 
 @media(min-width: 768px){
   .timeline {

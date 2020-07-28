@@ -11,10 +11,10 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto mt-1">
-      <router-link tag="li" to="/background" class="nav-item mx-3"><a class="nav-link">Background</a></router-link>
-      <router-link tag="li" to="/skills" class="nav-item mx-3"><a class="nav-link">Skills</a></router-link>
+      <router-link tag="li" to="/background" class="nav-item mx-3"><a data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Background</a></router-link>
+      <router-link tag="li" to="/skills" class="nav-item mx-3"><a data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Skills</a></router-link>
       <!-- <router-link tag="li" to="/experience" class="nav-item mx-3"><a class="nav-link">Experience </a></router-link> -->
-      <router-link tag="li" to="/projects" class="nav-item mx-3"><a class="nav-link">Projects</a></router-link>
+      <router-link tag="li" to="/projects" class="nav-item mx-3"><a data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">Projects</a></router-link>
     </ul>
   </div>
 </nav>

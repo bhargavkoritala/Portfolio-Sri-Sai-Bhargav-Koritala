@@ -7,7 +7,7 @@
     
     <div>
         <h4 class="font-weight-bold">Programming</h4>
-      </div>
+    </div>
     <div class="row rounded justify-content-start">
       <div :key="key" v-for="(value,key) in programmingSkills" class="mb-3 col-lg-4 col-md-4 col-sm-4 col-6">
         <p>
@@ -16,7 +16,7 @@
         </p>
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
       </div>
       </div>
@@ -34,11 +34,10 @@
         </p>
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
       </div>
       </div>
-      
     </div>
     <div>
         <h4 class="font-weight-bold">Frameworks</h4>
@@ -51,7 +50,7 @@
         </p>
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar  progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar  progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
       </div>
       </div>
@@ -71,7 +70,7 @@
           </p>
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
       </div>
       </div>
@@ -87,7 +86,7 @@
         {{key}}
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
       </div>
       </div>

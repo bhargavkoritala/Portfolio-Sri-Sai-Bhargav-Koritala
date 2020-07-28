@@ -1,7 +1,7 @@
 <template>
     <div id="home" class="container-fluid">
        <div class="row justify-content-center">
-           <div class="justify-content-center col-lg-6 col-md-6 col-sm-6">
+           <div class="container justify-content-center col-lg-6 col-md-6 col-sm-6">
                <img class="me img-fluid img-responsive rounded mx-auto d-block" src="../assets/profile.png" alt="">
            </div>
            <div class="align-self-center typewriter col-lg-6 col-md-6 col-sm-6">
@@ -10,13 +10,12 @@
                        <strong>Bhargav Koritala</strong>
                    </div>
                 </h3>
-               <p>I am a graduate student at University at Buffalo, pursuing my Master's in Computer Science and Engineering
+               <p>I am a graduate student at University at Buffalo, pursuing my Masters in Computer Science and Engineering
                     with a concentration in Software and Information Systems. 
                    At UB, I focused my academic coursework on application development and user experience.
                 </p>
-                <p>I am a graduate student at University at Buffalo, pursuing my Master's in Computer Science and Engineering
-                    with a concentration in Software and Information Systems. 
-                   At UB, I focused my academic coursework on application development and user experience.
+                <p>The nexus of my expertise lies in web application development, from designing user interfaces, transferring and processing information 
+                  through application programming interface calls, thus storing and manipulating data through CRUD operations. 
                 </p>
                 <div class="d-flex justify-content-around">
                     <ul>
@@ -34,7 +33,7 @@
                             <a target="_blank" href="https://facebook.com/bhargav.kss"><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a target="_blank" href="mailto:bhargavkoritala@gmail.com   "><i class="far fa-envelope"></i></a>
+                            <a target="_blank" href="mailto:bhargavkoritala@gmail.com"><i class="far fa-envelope"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -44,6 +43,11 @@
 </template>
 
 <style scoped>
+
+.me {
+  max-width: 100%;;
+  max-height: 75vh;
+}
 
 ul {
   position:relative;
@@ -67,24 +71,23 @@ ul li a {
   padding: 6px;
   box-sizing: border-box;
   text-decoration:none;
-  box-shadow: 0 0px 0px rgba(0,0,0,0.3);
-  background: linear-gradient(0deg, #fff, #fff);
+  box-shadow: 0 0px 0px rgba(0,0,0,1);
   transition: .5s;
 }
 
 ul li a:hover {
-  box-shadow: 0 0px 0px rgba(0,0,0,0.3);
+  box-shadow: 0 0px 0px rgba(0,0,0,0.7);
 }
 
 ul li a .fa-linkedin-in{
   width: 100%;
   height:100%;
   display:block;
-  background: linear-gradient(0deg, #0e76a8, #fff);
+  background: linear-gradient(0deg, #ffffff, #ffffff);
   border-radius: 50%;
   line-height: calc(60px - 12px);
   font-size:24px;
-  color: #ffffff;
+  color: #0e76a8;
   transition: .5s;
 }
 
@@ -92,11 +95,11 @@ ul li a .fa-github{
   width: 100%;
   height:100%;
   display:block;
-  background: linear-gradient(0deg, black,#fff);
+  background: linear-gradient(0deg, white,white);
   border-radius: 50%;
   line-height: calc(60px - 12px);
   font-size:24px;
-  color: #ffffff;
+  color:black;
   transition: .5s;
 }
 
@@ -104,11 +107,11 @@ ul li a .fa-facebook-f{
   width: 100%;
   height:100%;
   display:block;
-  background: linear-gradient(0deg, #fff, #3b5998);
+  background: linear-gradient(0deg, #ffffff, #ffffff);
   border-radius: 50%;
   line-height: calc(60px - 12px);
   font-size:24px;
-  color: #ffffff;
+  color: #3b5998;
   transition: .5s;
 }
 
@@ -116,29 +119,32 @@ ul li a .fa-envelope {
   width: 100%;
   height:100%;
   display:block;
-  background: linear-gradient(0deg, #fff, #D44638);
+  background: linear-gradient(0deg, #ffffff, #ffffff);
   border-radius: 50%;
   line-height: calc(60px - 12px);
   font-size:24px;
-  color: #ffffff;
+  color: #D44638;
   transition: .5s;
 }
 
 ul li:nth-child(1) a:hover .fab {
-  color: #0e76a8;
-  background: white;
+  color: white;
+  background: #0e76a8;
 }
 
 ul li:nth-child(2) a:hover .fab {
-  color: black;
+  color:white;
+  background: black;
 }
 
 ul li:nth-child(3) a:hover .fab {
-  color: #3b5998;
+  color:white;
+  background: #3b5998;
 }
 
 ul li:nth-child(4) a:hover .far {
-  color: #D44638;
+  color: white;
+  background: #D44638;
 }
 
 
@@ -177,10 +183,5 @@ h3,h6{
 
 div p{
     text-align:justify;
-}
-
-.me {
-  max-width: 100%;;
-  max-height: 75vh;
 }
 </style>
