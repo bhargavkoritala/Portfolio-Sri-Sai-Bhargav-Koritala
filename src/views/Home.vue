@@ -147,8 +147,6 @@ ul li:nth-child(4) a:hover .far {
   background: #D44638;
 }
 
-
-
 .typewriter h3 strong {
   color: 2c3e50;
   text-align: center;

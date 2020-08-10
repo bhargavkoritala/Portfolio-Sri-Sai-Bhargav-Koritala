@@ -7,7 +7,7 @@
     </h3>
     <div class="row">
   <div class="mb-3 col-lg-4 col-md-4 col-sm-4 col-12" :key="index" v-for="(project,index) in projects">
-    <div class="card" style="height: 40vh;">
+    <div class="card">
       <div class="card-body">
         <h5 class="card-title">{{project.name}}</h5>
         <p class="card-text text-justify">{{project.desc}}</p>
