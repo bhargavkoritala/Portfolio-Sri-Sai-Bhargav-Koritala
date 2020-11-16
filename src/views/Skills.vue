@@ -16,7 +16,7 @@
         </p>
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
       </div>
       </div>
@@ -34,7 +34,7 @@
         </p>
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
       </div>
       </div>
@@ -50,7 +50,7 @@
         </p>
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar  progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar  progress-bar-striped  bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
       </div>
       </div>
@@ -70,7 +70,7 @@
           </p>
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
       </div>
       </div>
@@ -86,7 +86,7 @@
         {{key}}
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
       </div>
       </div>
@@ -125,6 +125,11 @@ export default {
             icon : "fab fa-js-square",
             type : "Web"
           },
+          "NodeJS" : {
+            skillValue : 60,
+            icon : "fab fa-node-js",
+            type : "Web"
+          },
           "jQuery" : {
             skillValue : 50,
             icon : "jquery"
@@ -144,6 +149,10 @@ export default {
         "VueJS" : {
           skillValue : 80,
           icon : "fab fa-vuejs"
+        },
+        "ExpressJS" : {
+          skillValue : 60,
+          icon : ""
         }
       }
     },

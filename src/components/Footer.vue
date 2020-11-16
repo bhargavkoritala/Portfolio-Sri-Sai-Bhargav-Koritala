@@ -17,6 +17,8 @@
     margin-bottom: 5vh;
   }
 
+  
+
  hr.soft {
     border: 0;
     height: 1px;

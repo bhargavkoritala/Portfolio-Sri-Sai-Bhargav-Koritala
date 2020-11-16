@@ -3,6 +3,13 @@
        <div class="row justify-content-center">
            <div class="container justify-content-center col-lg-6 col-md-6 col-sm-6">
                <img class="me img-fluid img-responsive rounded mx-auto d-block" src="../assets/profile.png" alt="">
+                <div class="justify-content-center text-center">
+                  <a :href="`${pathforPublic}Sri_Sai_Bhargav_Koritala_Resume.pdf`" download="SriSaiBhargav_Resume.pdf">
+                    <button class="border border-secondary btn" @mouseover="isHovering=!isHovering" :class="{hovering:isHovering}">
+                      <i class="fas fa-file-download"></i> Resume
+                    </button>
+                  </a>
+                </div>
            </div>
            <div class="align-self-center typewriter col-lg-6 col-md-6 col-sm-6">
                <h3 class="text-center">
@@ -18,31 +25,47 @@
                   through application programming interface calls, thus storing and manipulating data through CRUD operations. 
                 </p>
                 <div class="d-flex justify-content-around">
-                    <ul>
-                        <li>
-                            <a target="_blank" href="https://linkedin.com/in/bhargavkoritala">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/bhargavkoritala">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://facebook.com/bhargav.kss"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="mailto:bhargavkoritala@gmail.com"><i class="far fa-envelope"></i></a>
-                        </li>
-                    </ul>
+                  <ul>
+                    <li>
+                        <a target="_blank" href="https://linkedin.com/in/bhargavkoritala">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/bhargavkoritala">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://facebook.com/bhargav.kss"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="mailto:bhargavkoritala@gmail.com"><i class="far fa-envelope"></i></a>
+                    </li>
+                  </ul>
                 </div>
            </div>
        </div>
     </div>
 </template>
 
+<script>
+export default {
+  name: 'Home',
+  data(){
+    return{
+       pathforPublic: process.env.BASE_URL,
+       isHovering:true,
+    }
+  }
+}
+</script>
+
 <style scoped>
+
+.hovering {
+  background-color: grey;
+}
 
 .me {
   max-width: 100%;;

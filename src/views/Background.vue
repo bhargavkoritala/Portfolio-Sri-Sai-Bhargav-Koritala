@@ -8,72 +8,96 @@
       </div>
     </h3>
     <ul class="timeline">
-  <!-- Item 1 -->
-  <li>
-    <div class="comego direction-l">
-      <div class="flag-wrapper">
-        <span class="hexa"></span>
-        <span class="flag">University at Buffalo - SUNY</span>
-        <span class="time-wrapper"><span class="time">August 2019 - Present</span></span>
-      </div>
-      <div class="desc text-center font-italic">Masters in Computer 
-        Science</div>
-      <div class="desc text-justify font-italic">  <strong>Coursework: </strong><p>Algorithm analysis and design, Information Retreival, Data Intensive Computing, Distributed Systems</p></div>
-    </div>
-  </li>
-
-  <!-- Item 2 -->
-  
-  <li>
-    <div class="comego direction-r">
-      <div class="flag-wrapper">
-        <span class="hexa"></span>
-        <span class="flag">Infosys Pvt Ltd.</span>
-        <div>
-          <span class="time-wrapper"><span class="time">June 2017 - July 2019</span></span>
+      
+      <!-- Item 1 -->
+      <li>
+        <div class="comego direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Atwick Inc.</span>
+            <span class="time-wrapper"><span class="time">August 2020 - Present</span></span>
+          </div>
+          <div class="desc text-center font-italic">Full Stack Developer Intern</div>
+          <div class="desc text-justify font-italic">
+            <p>
+              Developed a full-stack web application using VueJS for client-side architecture 
+              and server-side created using Node and MongoDB and upgraded the app from VueJS 2 to VueJS 3.
+            </p>
+            <p>
+              Designed, developed and implemented a NoSQL database architecture based on the analysis
+               of business requirements for a high-volume web application improving data integrity
+              and execution efficiency.
+            </p>
+            <p>
+              Responsible for integration of third-party API services for video meetings, scheduling appointments
+               and enabling payment options resulting in decrease of system complexity.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="desc text-center">
-        <span class="align-middle font-weight-bold">Systems Engineer</span>
-      </div>
-      <div class="desc text-justify">
-        <p>Engineered an email content analysis using JavaMail API, that assess header, body and attachments and derived nature, extent and 
-            frequency of a risk that ensured operations \& business continuity management by continuous monitoring of mail.</p>
-          <p>
-            Recommended and executed a server monitoring to estimate optimum usage of a server by providing insights on server stats using Prometheus metrics and Grafana to visualize the dashboards.
-          </p>
-          <p>
-            Improved the back-end search design element for a fashion website through a usability point of view that involves enabling query caching, using full text searches and query optimization.
-          </p>
-          <p>
-            Contributed in a cross-functional team to build a mini-project, to serve as a teaching aid for interns and trainees.
-          </p>
-      </div>
-    </div>
-  </li>
+      </li>
 
-  <!-- Item3 -->
-  
-
-  <li>
-    <div class="comego direction-l">
-      <div class="flag-wrapper">
-        <span class="hexa"></span>
-        <span class="flag">Vellore Institute of Technology</span>
-        <div>
-          <span class="time-wrapper"><span class="time">June 2013 - May 2017</span></span>
+      <!-- Item 1 -->
+      <li>
+        <div class="comego direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">University at Buffalo - SUNY</span>
+            <span class="time-wrapper"><span class="time">August 2019 - Present</span></span>
+          </div>
+          <div class="desc text-center font-italic">Masters in Computer 
+            Science</div>
+          <div class="desc text-justify font-italic">  <strong>Coursework: </strong><p>Algorithm analysis and design, Information Retreival, Data Intensive Computing, Distributed Systems</p></div>
         </div>
-      </div>
-      <div class="desc text-justify">
-        <strong>Coursework: </strong>
-        <p>Data Structures and Algorithms, Neural Networks, Computer Architecture</p>
-      </div>
-    </div>
-  </li>
-</ul>
-      </div>
-    </div>
+      </li>
 
+      <!-- Item 2 -->
+      <li>
+        <div class="comego direction-l">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag">Infosys Pvt Ltd.</span>
+            <div>
+              <span class="time-wrapper"><span class="time">June 2017 - July 2019</span></span>
+            </div>
+          </div>
+          <div class="desc text-center">
+            <span class="align-middle font-weight-bold">Systems Engineer</span>
+          </div>
+          <div class="desc text-justify">
+            <p>Engineered an email content analysis using JavaMail API, that assess header, body and attachments and derived nature, extent and 
+                frequency of a risk that ensured operations \& business continuity management by continuous monitoring of mail.</p>
+              <p>
+                Recommended and executed a server monitoring to estimate optimum usage of a server by providing insights on server stats using Prometheus metrics and Grafana to visualize the dashboards.
+              </p>
+              <p>
+                Improved the back-end search design element for a fashion website through a usability point of view that involves enabling query caching, using full text searches and query optimization.
+              </p>
+              <p>
+                Contributed in a cross-functional team to build a mini-project, to serve as a teaching aid for interns and trainees.
+              </p>
+          </div>
+        </div>
+      </li>
+
+      <!-- Item3 -->
+      <li>
+        <div class="comego direction-r">
+          <div class="flag-wrapper">
+            <span class="hexa"></span>
+            <span class="flag rounded border-secondary">Vellore Institute of Technology</span>
+            <div>
+              <span class="time-wrapper"><span class="time">June 2013 - May 2017</span></span>
+            </div>
+          </div>
+          <div class="desc text-justify">
+            <strong>Coursework: </strong>
+            <p>Data Structures and Algorithms, Neural Networks, Computer Architecture</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
   </div>
 </template>
 
@@ -204,12 +228,12 @@ header h1{
 
 .flag {
   position: relative;
-  display: inline;
+  display: block;
   background: rgb(255,255,255);
   font-weight: 600;
   z-index: 15;
   padding: 6px 10px;
-  text-align: left;
+  text-align: center;
   border-radius: 5px;
 }
 
