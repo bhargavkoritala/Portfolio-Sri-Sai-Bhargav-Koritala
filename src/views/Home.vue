@@ -4,9 +4,9 @@
            <div class="container justify-content-center col-lg-6 col-md-6 col-sm-6">
                <img class="me img-fluid img-responsive rounded mx-auto d-block" src="../assets/profile.png" alt="">
                 <div class="justify-content-center text-center">
-                  <a :href="`${pathforPublic}Sri_Sai_Bhargav_Koritala_Resume.pdf`" download="SriSaiBhargav_Resume.pdf">
-                    <button class="border border-secondary btn" @mouseover="isHovering=!isHovering" :class="{hovering:isHovering}">
-                      <i class="fas fa-file-download"></i> Resume
+                  <a @mouseover="isHovering=!isHovering" @mouseleave="isHovering=!isHovering" :href="`${pathforPublic}Sri_Sai_Bhargav_Koritala_Resume.pdf`" download="SriSaiBhargav_Resume.pdf">
+                    <button class="btn btn-sm btn-outline-dark" :class="{hovering:isHovering}">
+                      <i class="fas fa-file-pdf"></i> Resume
                     </button>
                   </a>
                 </div>
@@ -14,7 +14,7 @@
            <div class="align-self-center typewriter col-lg-6 col-md-6 col-sm-6">
                <h3 class="text-center">
                    <div class="d-flex justify-content-center">
-                       <strong>Bhargav Koritala</strong>
+                       <strong>Sri Sai Bhargav Koritala</strong>
                    </div>
                 </h3>
                <p>I am a graduate student at University at Buffalo, pursuing my Masters in Computer Science and Engineering
@@ -55,7 +55,7 @@ export default {
   data(){
     return{
        pathforPublic: process.env.BASE_URL,
-       isHovering:true,
+       isHovering:false,
     }
   }
 }
@@ -64,7 +64,8 @@ export default {
 <style scoped>
 
 .hovering {
-  background-color: grey;
+  color: white;
+  background-image: black;
 }
 
 .me {
