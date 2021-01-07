@@ -14,7 +14,7 @@
            <div class="align-self-center typewriter col-lg-6 col-md-6 col-sm-6">
                <h3 class="text-center">
                    <div class="d-flex justify-content-center">
-                       <strong>Sri Sai Bhargav Koritala</strong>
+                       <strong class="text-info">Sri Sai Bhargav Koritala</strong>
                    </div>
                 </h3>
                <p>I am a graduate student at University at Buffalo, pursuing my Masters in Computer Science and Engineering

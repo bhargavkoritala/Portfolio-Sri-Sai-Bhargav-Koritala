@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light text-info">
   <router-link class="navbar-brand" to="/" active-class="active" exact>
       <img src="../public/bklogo.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
       Sri Sai Bhargav Koritala
@@ -52,13 +52,18 @@ export default {
   padding: 30px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+nav li a  {
+  color: #17a2b8;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+ nav a:hover,
+ nav a.router-link-active,
+ nav a.router-link-exact-active {
+     color: #17a2b8 !important;
+ }
+
+.router-link-exact-active a{
+  color: #17a2b8 !important;
 }
 
 body{

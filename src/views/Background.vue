@@ -14,10 +14,10 @@
         <div class="comego direction-l">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag">Atwick Inc.</span>
-            <span class="time-wrapper"><span class="time">August 2020 - Present</span></span>
+            <span class="flag text-info">Atwick Inc.</span>
+            <span class="time-wrapper"><span class="time bg-info">August 2020 - December 2020</span></span>
           </div>
-          <div class="desc text-center font-italic">Full Stack Developer Intern</div>
+          <div class="desc text-center font-italic">Full Stack Engineer Intern</div>
           <div class="desc text-justify font-italic">
             <p>
               Developed a full-stack web application using VueJS for client-side architecture 
@@ -41,12 +41,12 @@
         <div class="comego direction-r">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag">University at Buffalo - SUNY</span>
-            <span class="time-wrapper"><span class="time">August 2019 - Present</span></span>
+            <span class="flag text-info">University at Buffalo - SUNY</span>
+            <span class="time-wrapper"><span class="time bg-info">August 2019 - Present</span></span>
           </div>
           <div class="desc text-center font-italic">Masters in Computer 
             Science</div>
-          <div class="desc text-justify font-italic">  <strong>Coursework: </strong><p>Algorithm analysis and design, Information Retreival, Data Intensive Computing, Distributed Systems</p></div>
+          <div class="desc text-justify font-italic">  <strong>Coursework: </strong><p>Algorithm analysis and design, Information Retreival, Data Intensive Computing, Distributed Systems, Object Oriented Analysis Design and Implementation, Data models and Query languages.</p></div>
         </div>
       </li>
 
@@ -54,16 +54,16 @@
       <li>
         <div class="comego direction-l">
           <div class="flag-wrapper">
-            <span class="hexa"></span>
-            <span class="flag">Infosys Pvt Ltd.</span>
+            <span class="hexa "></span>
+            <span class="flag text-info">Infosys Pvt Ltd.</span>
             <div>
-              <span class="time-wrapper"><span class="time">June 2017 - July 2019</span></span>
+              <span class="time-wrapper"><span class="time bg-info">June 2017 - July 2019</span></span>
             </div>
           </div>
           <div class="desc text-center">
-            <span class="align-middle font-weight-bold">Systems Engineer</span>
+            <span class="align-middle font-italic">Systems Engineer</span>
           </div>
-          <div class="desc text-justify">
+          <div class="desc text-justify font-italic">
             <p>Engineered an email content analysis using JavaMail API, that assess header, body and attachments and derived nature, extent and 
                 frequency of a risk that ensured operations \& business continuity management by continuous monitoring of mail.</p>
               <p>
@@ -84,12 +84,12 @@
         <div class="comego direction-r">
           <div class="flag-wrapper">
             <span class="hexa"></span>
-            <span class="flag rounded border-secondary">Vellore Institute of Technology</span>
+            <span class="flag rounded border-secondary text-info">Vellore Institute of Technology</span>
             <div>
-              <span class="time-wrapper"><span class="time">June 2013 - May 2017</span></span>
+              <span class="time-wrapper"><span class="time bg-info">June 2013 - May 2017</span></span>
             </div>
           </div>
-          <div class="desc text-justify">
+          <div class="desc text-justify font-italic">
             <strong>Coursework: </strong>
             <p>Data Structures and Algorithms, Neural Networks, Computer Architecture</p>
           </div>
@@ -125,8 +125,8 @@ header h1{
   height: 35px;
   width: 60px;
   font-size: 22px;
-  background: #f0f0f0;
-  color: #3c3c3c;
+  background: #17a2b8;
+  color: #17a2b8;
   position: relative;
   margin-top: 15px;
 }
@@ -137,7 +137,7 @@ header h1{
   left: 0; 
   width: 0; 
   height: 0;
-  border-bottom: 15px solid #f0f0f0;
+  border-bottom: 15px solid #17a2b8;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   top: -15px;
@@ -151,7 +151,7 @@ header h1{
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-top: 15px solid #f0f0f0;
+  border-top: 15px solid #17a2b8;
   bottom: -15px;
 }
 
@@ -190,7 +190,7 @@ header h1{
   width: 16px;
   height: 10px;
   position: absolute;
-  background: #333;
+  background: #17a2b8;
   z-index: 5;
   left: 0;
   right: 0;
@@ -201,7 +201,7 @@ header h1{
 }
 
 .timeline .hexa:before {
-  border-bottom: 4px solid #333;
+  border-bottom: 4px solid #17a2b8;
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
@@ -210,7 +210,7 @@ header h1{
 .timeline .hexa:after {
   border-left-width: 8px;
   border-right-width: 8px;
-  border-top: 4px solid #333;
+  border-top: 4px solid #17a2b8;
   bottom: -4px;
 }
 
@@ -270,7 +270,6 @@ header h1{
   margin: 4px 0 0 0;
   z-index: 14;
   line-height: 1em;
-  vertical-align: middle;
   color: #fff;
 }
 

@@ -8,16 +8,18 @@
     <div>
         <h4 class="font-weight-bold">Programming</h4>
     </div>
-    <div class="row rounded justify-content-start">
+    <div class="row">
       <div :key="key" v-for="(value,key) in programmingSkills" class="mb-3 col-lg-4 col-md-4 col-sm-4 col-6">
+        <div class="bg-dark rounded p-3">
         <p>
           <i :class="value.icon"></i>
           {{key}}
         </p>
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
+      </div>
       </div>
       </div>
       
@@ -25,8 +27,10 @@
     <div>
         <h4 class="font-weight-bold">Web</h4>
       </div>
-    <div class="row justify-content-start">
-      <div :key="key" v-for="(value,key) in webSkills" class="mb-4 col-lg-4 col-md-4 col-sm-4 col-6">
+
+        <div class="row">
+      <div :key="key" v-for="(value,key) in webSkills" class="mb-3 col-lg-4 col-md-4 col-sm-4 col-6">
+        <div class="bg-dark rounded p-3">
         <p>
           <i :class="value.icon"></i>
           <img v-if="key=='jQuery'" src="../assets/jquery.png" alt="" width=15 height=15>
@@ -34,34 +38,39 @@
         </p>
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
       </div>
+        </div>
       </div>
     </div>
+
+    
     <div>
         <h4 class="font-weight-bold">Frameworks</h4>
       </div>
-    <div class="row justify-content-start">
-      <div :key="key" v-for="(value,key) in frameworks" class="mb-4 col-lg-4 col-md-4 col-sm-4 col-6">
+    <div class="row">
+      <div :key="key" v-for="(value,key) in frameworks" class="mb-3 col-lg-4 col-md-4 col-sm-4 col-6">
+        <div class="bg-dark rounded p-3">
         <p>
           <i :class="value.icon"></i>
           {{key}}
         </p>
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar  progress-bar-striped  bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
       </div>
+        </div>
       </div>
       
     </div>
     <div>
       <h4 class="font-weight-bold">Databases</h4>
     </div>
-    <div class="row justify-content-start">
-      
-      <div :key="key" v-for="(value,key) in databases" class="mb-4 col-lg-4 col-md-4 col-sm-4 col-6">
+    <div class="row">
+      <div :key="key" v-for="(value,key) in databases" class="mb-3 col-lg-4 col-md-4 col-sm-4 col-6">
+          <div class="bg-dark rounded p-3">
           <p>
             <img v-if="key=='MySQL'" style="filter: gray;-webkit-filter: grayscale(1);filter: grayscale(1);" src="../assets/mysql.svg" alt="" width=15 height=15>
             <img v-if="key=='mongoDB'" style="filter: gray;-webkit-filter: grayscale(1);filter: grayscale(1);" src="../assets/mongo.svg" alt="" width=15 height=15>
@@ -70,25 +79,30 @@
           </p>
       <div class="icon">
           <div class="progress border border-secondary">
-            <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
           </div>
       </div>
+          </div>
       </div>
       
     </div>
     <div>
         <h4 class="font-weight-bold">Tools</h4>
       </div>
-    <div class="row justify-content-start">
-      <div :key="key" v-for="(value,key) in Tools" class="mb-4 col-lg-4 col-md-4 col-sm-4 col-6">
-          <img v-if="key=='Grafana'" style="filter: gray;-webkit-filter: grayscale(1);filter: grayscale(1);" src="../assets/grafana.svg" alt="" width=15 height=15>
-          <i :class="value.icon"></i>
-        {{key}}
-      <div class="icon">
-          <div class="progress border border-secondary">
-            <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+    <div class="row">
+      <div :key="key" v-for="(value,key) in Tools" class="col-lg-4 col-md-4 col-sm-4 col-6">
+          <div class="bg-dark p-3 rounded">
+            <p>
+              <img v-if="key=='Grafana'" style="filter: gray;-webkit-filter: grayscale(1);filter: grayscale(1);" src="../assets/grafana.svg" alt="" width=15 height=15>
+              <i :class="value.icon"></i>
+              {{key}}
+            </p>
+            <div class="icon">
+              <div class="progress border border-secondary">
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="value" aria-valuemin="0" aria-valuemax="100" :style="{width: value.skillValue+'%'}"></div>
+              </div>
+            </div>
           </div>
-      </div>
       </div>
       
     </div>
@@ -185,6 +199,10 @@ export default {
 </script>
 
 <style scoped>
+
+p,i{
+  color:white;
+}
 
 .progress .progress-bar {
   transition: unset;
