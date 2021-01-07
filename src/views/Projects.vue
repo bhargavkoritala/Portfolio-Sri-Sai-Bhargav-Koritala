@@ -7,8 +7,8 @@
     </h3>
     <div class="row">
   <div class="mb-3 col-lg-4 col-md-4 col-sm-4 col-12" :key="index" v-for="(project,index) in projects">
-    <div class="card border-info">
-      <div class="card-body">
+    <div class="card border-info text-light">
+      <div class="card-body  bg-dark">
         <h5 class="card-title">{{project.name}}</h5>
         <p class="card-text text-justify">{{project.desc}}</p>
         <a target="_blank" :href="project.link" class="btn btn-info"><i :class="{'fas fa-external-link-alt': project.button=='Admin Console','fab fa-github':project.button=='Github','fab fa-gitlab':project.button=='Gitlab'}"></i> {{project.button}}</a>
